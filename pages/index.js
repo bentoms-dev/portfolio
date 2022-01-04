@@ -2,6 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import avatar from '.././public/avatar.jpg';
+import missoma from '.././public/projects/missoma.png';
+import drmartens from '.././public/projects/drmartens.png';
+import dracbat from '.././public/projects/dracbat.png';
 
 export default function Home() {
   return (
@@ -12,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="bg-deep-purple-accent-700">
+      <div>
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
             <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
@@ -50,13 +53,163 @@ export default function Home() {
                   <span>Linkedin</span>
                 </a>
               </div>
-              <div className="mx-auto m-16">
-                <p className="text-sm">New site coming soon</p>
-              </div>
             </div>
           </div>
         </div>
       </div>
+      <section className="bg-gray-800 pattern py-20">
+        <div className="max-w-5xl px-6 mx-auto text-center">
+            <h2 className="text-2xl font-semibold text-white">Projects</h2>
+            <div className="flex items-center justify-center mt-10">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <div className="max-w-xs w-full">
+                        <div className="flex items-center justify-center h-56 bg-white border-b-8 border-teal-400 rounded-md overflow-hidden">
+                            <Image
+                              src={ missoma }
+                              alt="Picture of Missoma"
+                              className="object-cover h-8"
+                              width={300}
+                              height={300}/>
+                        </div>
+
+                        <a href="https://uk.missoma.com" className="block bg-gray-700 mt-5 rounded-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                            <div className="py-2 px-3 text-center text-sm">
+                                <p className="text-gray-300">Missoma</p>
+
+                                <span className="block text-gray-500 mt-2">missoma.com</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div className="max-w-xs w-full">
+                        <div className="flex items-center justify-center h-56 bg-white border-b-8 border-teal-400 rounded-md overflow-hidden">
+                         <Image
+                              src={ drmartens }
+                              alt="Picture of Dr. Martens"
+                              className="object-cover h-8"
+                              width={300}
+                              height={300}/>
+                        </div>
+
+                        <a href="https://drmartens.com" className="block bg-gray-700 mt-5 rounded-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                            <div className="py-2 px-3 text-center text-sm">
+                                <p className="text-gray-300">Dr. Martens</p>
+
+                                <span className="block text-gray-500 mt-2">drmartens.com</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div className="max-w-xs w-full">
+                        <div className="flex items-center justify-center h-56 bg-white border-b-8 border-teal-400 rounded-md overflow-hidden">
+                        <Image
+                              src={ dracbat }
+                              alt="Picture of dracbat"
+                              className="object-cover h-8"
+                              width={300}
+                              height={300}/>
+                        </div>
+
+                        <a href="#" className="block bg-gray-700 mt-5 rounded-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                            <div className="py-2 px-3 text-center text-sm">
+                                <p className="text-gray-300">Dracbat</p>
+
+                                <span className="block text-gray-500 mt-2">ben-toms.com/apps</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div className="max-w-xs w-full">
+                      <a href="#" className="block bg-gray-700 mt-5 rounded-md overflow-hidden">
+                        <div className="py-2 px-3 text-center text-sm">
+                            <p className="text-gray-300">Ernalow Property</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div className="max-w-xs w-full">
+                      <a href="#" className="block bg-gray-700 mt-5 rounded-md overflow-hidden">
+                        <div className="py-2 px-3 text-center text-sm">
+                            <p className="text-gray-300">SalonSystem</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div className="max-w-xs w-full">
+                      <a href="#" className="block bg-gray-700 mt-5 rounded-md overflow-hidden">
+                        <div className="py-2 px-3 text-center text-sm">
+                            <p className="text-gray-300">CaféDirect</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div className="max-w-xs w-full">
+                      <a href="#" className="block bg-gray-700 mt-5 rounded-md overflow-hidden">
+                        <div className="py-2 px-3 text-center text-sm">
+                            <p className="text-gray-300">Spotify</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div className="max-w-xs w-full">
+                      <a href="#" className="block bg-gray-700 mt-5 rounded-md overflow-hidden">
+                        <div className="py-2 px-3 text-center text-sm">
+                            <p className="text-gray-300">Tesco</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div className="max-w-xs w-full">
+                      <a href="#" className="block bg-gray-700 mt-5 rounded-md overflow-hidden">
+                        <div className="py-2 px-3 text-center text-sm">
+                            <p className="text-gray-300">ExxonMobil</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div className="max-w-xs w-full">
+                      <a href="#" className="block bg-gray-700 mt-5 rounded-md overflow-hidden">
+                        <div className="py-2 px-3 text-center text-sm">
+                            <p className="text-gray-300">London Real</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div className="max-w-xs w-full">
+                      <a href="#" className="block bg-gray-700 mt-5 rounded-md overflow-hidden">
+                        <div className="py-2 px-3 text-center text-sm">
+                            <p className="text-gray-300">Samsung</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div className="max-w-xs w-full">
+                      <a href="#" className="block bg-gray-700 mt-5 rounded-md overflow-hidden">
+                        <div className="py-2 px-3 text-center text-sm">
+                            <p className="text-gray-300">Hitachi Capital</p>
+                        </div>
+                      </a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex items-center justify-center mt-12">
+                <a className="flex items-center text-white hover:underline hover:text-gray-200"
+                  href="https://github.com/bentoms-dev"
+                  target="_blank"
+                  rel="noreferrer">
+                    <span>View More On Github</span>
+
+                    <svg className="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <div className="mx-auto m-16 text-center">
+      <p className="text-xs">Ben Toms &copy; 2022</p>
     </div>
+  </div>
   )
 }
