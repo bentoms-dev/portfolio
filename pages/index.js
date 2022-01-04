@@ -57,7 +57,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div class="big-text text-center sm:my-16 my-5">
+      <div className="big-text text-center sm:my-16 my-5">
         <h2 className="font-black text-9xl bg-gray-100 mix-blend-lighten uppercase">for the <br/> love of code</h2>
       </div>
       <section className="bg-gray-800 pattern py-20">
