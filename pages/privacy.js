@@ -135,7 +135,7 @@ export default function Home() {
                     privacy policies, or practices of any third-party sites or
                     services.
             </p>
-            <h2 className="text-lg mt-5">Children's Privacy</h2>
+            <h2 className="text-lg mt-5">Children`'`s Privacy</h2>
             <div>
                 <p>
                         These Services do not address anyone under the age of 13.
