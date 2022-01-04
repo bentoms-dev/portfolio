@@ -110,11 +110,11 @@ export default function Home() {
                               height={300}/>
                         </div>
 
-                        <a href="#" className="block bg-gray-700 mt-5 rounded-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                        <a href="https://play.google.com/store/apps/details?id=com.galleongamescompany.dracbat" className="block bg-gray-700 mt-5 rounded-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
                             <div className="py-2 px-3 text-center text-sm">
                                 <p className="text-gray-300">Dracbat</p>
 
-                                <span className="block text-gray-500 mt-2">ben-toms.com/apps</span>
+                                <span className="block text-gray-500 mt-2">Google Play</span>
                             </div>
                         </a>
                     </div>
