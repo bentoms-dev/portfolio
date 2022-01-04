@@ -9,6 +9,8 @@ Things to look out for:
 BenBot v2
  - My interactive Chatbot I built a few years ago
 
+ View the site at https://www.ben-toms.com/
+
  Thanks for looking folks!
 
  Ben
