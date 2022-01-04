@@ -19,3 +19,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.big-text {
+  background-image : url('https://images.unsplash.com/photo-1596865249308-2472dc5807d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2slMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
