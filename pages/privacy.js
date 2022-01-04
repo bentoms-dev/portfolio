@@ -65,7 +65,7 @@ export default function Home() {
                     I collect data and information (through third-party
                     products) on your phone called Log Data. This Log Data may
                     include information such as your device Internet Protocol
-                    (“IP”) address, device name, operating system version, the
+                    ("IP") address, device name, operating system version, the
                     configuration of the app when utilizing my Service,
                     the time and date of your use of the Service, and other
                     statistics.
@@ -80,9 +80,9 @@ export default function Home() {
                     stored on your device's internal memory.
             </p>
             <p>
-                    This Service does not use these “cookies” explicitly. However,
+                    This Service does not use these "cookies" explicitly. However,
                     the app may use third-party code and libraries that use
-                    “cookies” to collect information and improve their services.
+                    "cookies" to collect information and improve their services.
                     You have the option to either accept or refuse these cookies
                     and know when a cookie is being sent to your device. If you
                     choose to refuse our cookies, you may not be able to use some
@@ -135,7 +135,7 @@ export default function Home() {
                     privacy policies, or practices of any third-party sites or
                     services.
             </p>
-            <h2 className="text-lg mt-5">Children’s Privacy</h2>
+            <h2 className="text-lg mt-5">Children's Privacy</h2>
             <div>
                 <p>
                         These Services do not address anyone under the age of 13.
