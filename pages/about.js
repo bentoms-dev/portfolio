@@ -72,7 +72,7 @@ export default function About() {
                             <ul>
                                 <li>E-commerce sites</li>
                                 <li>Apps</li>
-                                <li>User Dashboads</li>
+                                <li>User dashboards</li>
                                 <li>Fun projects</li>
                             </ul>
                         </div>
