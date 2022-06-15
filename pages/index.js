@@ -35,14 +35,14 @@ export default function Home() {
                     Fullstack Web Developer
                   </p>
                   <p className="text-base text-gray-700 md:text-sm mb-3">
-                    With 13+ years experience, I understand what makes a site flow and the importance of strong code.<br/>
-                    My design, music and art background allows me to bring a uniquely influenced style to my work that most developers don&apos;t have.
+                    With 14+ years experience, I understand what makes a site flow and the importance of strong code.<br/>
+                    My design, music and art background allows me to bring a uniquely influenced style to my work that most developers don&apos;t have...
                   </p>
                   <div className="flex items-center justify-center mt-3">
                     <Link
                       passHref
                       className="flex items-center text-gray-700 hover:underline hover:text-gray-400"
-                      href="/about"><span>Continue reading &rarr;</span>
+                      href="/about"><span>Get to the good stuff &rarr;</span>
                     </Link>
                   </div>
                 </div>
