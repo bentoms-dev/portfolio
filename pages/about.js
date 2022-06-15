@@ -68,11 +68,13 @@ export default function About() {
                                 <li>HTML</li>
                                 <li>Git</li>
                             </ul>
-                            <h2 className="font-semibold text-xl">What I like building</h2>
+                            <h2 className="font-semibold text-xl">What I like working on</h2>
                             <ul>
                                 <li>E-commerce sites</li>
                                 <li>Apps</li>
                                 <li>User dashboards</li>
+                                <li>Performance improvements</li>
+                                <li>Penetration testing</li>
                                 <li>Fun projects</li>
                             </ul>
                         </div>
