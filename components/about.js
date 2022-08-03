@@ -59,15 +59,31 @@ export default function About() {
                     <li>coffee</li>
                 </ul>
             </div>
-            <div className='grid grid-cols-1 text-left lg:text-right lg:justify-items-end'>
+            <div className='grid grid-cols-1 text-left lg:text-right lg:justify-items-end mb-10 lg:mb-28'>
                 <h2 className='text__pull-up hidden lg:block'>WHAT I LIKE WORKING ON</h2>
                 <ul className='list-none columns-3 lg:columns-2 w-25'>
                     <li>e-commerce</li>
                     <li>apps</li>
-                    <li>dashboads</li>
+                    <li>dashboards</li>
                     <li>perf</li>
                     <li>pen test</li>
                     <li>challenges</li>
+                </ul>
+            </div>
+            <div className='grid'>
+                <span className="w-full p-4 lg:p-10 bg-lime-400 lg:w-100 mb-10"></span>
+            </div>
+            <div className='grid grid-cols-1 text-center'>
+                <h3>WHO I&apos;VE WORKED WITH</h3>
+                <ul className='worked-with list-none text-center flex flex-col lg:flex-row lg:justify-between'>
+                    <li className='display'>missoma</li>
+                    <li className='display'>samsung</li>
+                    <li className='display'>dr. martens</li>
+                    <li className='display'>tesco</li>
+                    <li className='display'>spotify</li>
+                    <li className='display'>cafédirect</li>
+                    <li className='display'>exonmobil</li>
+                    <li className='display'>hitachi</li>
                 </ul>
             </div>
         </div>

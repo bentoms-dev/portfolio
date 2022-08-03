@@ -47,9 +47,25 @@ h1, h2 {
   font-family: "pp_right_sanstall_regular", 'Times New Roman', Times, serif;
 }
 
+h3 {
+  font-size: 16px;
+}
+
+.display {
+  font-size: 9rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-family: "pp_right_sanstall_regular", 'Times New Roman', Times, serif;
+  position: relative;
+}
+
 @media screen and (max-width:767px) {
   h1,h2 {
     font-size: 13rem
+  }
+  .display {
+    font-size: 4rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -99,4 +115,15 @@ p {
 
 .w-25 {
   width: 25rem;
+}
+
+@media screen and (min-width:1024px) {
+  .worked-with li::after {
+      content: '/';
+      position: absolute;
+      right: -36px;
+  }
+  .worked-with li:last-child:after {
+    display: none;
+  }
 }
