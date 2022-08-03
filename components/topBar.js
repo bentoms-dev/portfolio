@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Topbar() {
     return (
             <nav className="px-2 sm:px-4 py-2.5">
-            <div className="flex align-items-center justify-between items-center mx-auto">
+            <div className="flex justify-between items-center mx-auto">
                 <div className="w-full md:block md:w-auto">
                 <ul className="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                     <li>
@@ -25,7 +25,7 @@ export default function Topbar() {
                         </g>
                     </svg>
                 </div>
-                <div className="w-full md:block md:w-auto">
+                <div className="w-full md:block md:w-auto text-right">
                 <ul className="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                     <li>
                     <Link
