@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import me from '.././public/ben-toms.jpg'
+import me from '.././public/ben-toms-2.jpeg'
 import styles from '../styles/Home.module.css'
 
 export default function About() {
