@@ -12,6 +12,15 @@
 
 }
 
+::selection {
+  background: #A2E636;
+  color: #000000;
+}
+::-moz-selection {
+  background: #A2E636;
+  color: #000000;
+}
+
 html,
 body {
   padding: 0;
@@ -26,6 +35,13 @@ body {
 a {
   color: inherit;
   text-decoration: underline;
+}
+
+.link__highlight a {
+  background: #A2E636;
+  color: #000000;
+  text-decoration: none;
+  padding: 4px;
 }
 
 * {

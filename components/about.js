@@ -11,18 +11,21 @@ export default function About() {
                 <div className='grid grid-cols-1 md:grid-cols-3 col-span-2'>
                     <div className='grid grid-cols-1'>
                         <Image
+                        priority={true}
                         className="lg:w-screen lg:h-screen object-fit object-contain lg:object-cover"
                         src={me} alt="A picture of Ben Toms"/>
                         <span>
                             BEN TOMS
                         </span>
-                        <Link
-                            passHref
-                            href="mailto:me@ben-toms.com"
-                            target="_blank"
-                        >
-                            Ready to talk? Let&apos;s go →
-                        </Link>
+                        <span className="link__highlight">
+                            <Link
+                                passHref
+                                href="mailto:me@ben-toms.com"
+                                target="_blank"
+                            >
+                                Ready to talk? Let&apos;s go →
+                            </Link>
+                        </span>
                     </div>
                     <div className='grid lg:pr-28 lg:pl-4 lg:col-span-2'>
                         <h1 className='text__pull-up'>DEVELOPER</h1>
