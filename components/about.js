@@ -34,13 +34,13 @@ export default function About() {
                 </div>
                 <div className='lg:text-right grid lg:pl-17'>
                     <h2 className='text__push-down'>LEADER</h2>
-                    <p><span className="text__callout">BUILDING THE DREAM TEAM.</span> I&apos;ve had many opportunities in my career to be in the position of building and leading development teams. From a small 3 piece to a strong 6 I&apos;ve been able to mentor, shape and also learn from other developers. I have a passion for training others and also learning from them. I&apos;m never going to pretend to know everything because that&apos;s never possible. </p>
+                    <p><span className="text__callout">BUILDING THE DREAM TEAM.</span> I&apos;ve had many opportunities in my career to be in the position of building and leading development teams. From a small 3 piece to a strong 6 I&apos;ve been able to mentor, shape and also learn from other developers. I have a passion for training others and also learning from them. I&apos;m never going to pretend to know everything because that&apos;s isn&apos;t possible. </p>
                 </div>
             </div>
             <div className='grid grid-cols-1 justify-items-center text-center mb-10 lg:mb-28'>
                 <span className="w-full p-0-2 bg-white lg:w-1/3 mb-10"></span>
                 <p>
-                <span className="text__callout">I&apos;VE ALWAYS HAS A PASSING FOR BUILDING APPLICATIONS.</span> Creating features and functions that people can interact with is really excfiting for me.<br/>
+                <span className="text__callout">I&apos;VE ALWAYS HAS A PASSION FOR BUILDING APPLICATIONS.</span> Creating features and functions that people can interact with is really exciting for me.<br/>
                     This is why I love working in the B2C sector as I get to see how people interact with the products I put out and I learn and improve from the feedback.
                 </p>
                 <span className="w-full p-0-2 bg-white lg:w-1/3 mt-10"></span>
