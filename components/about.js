@@ -14,7 +14,7 @@ export default function About() {
                         priority={true}
                         className="lg:w-screen lg:h-screen object-fit object-contain lg:object-cover"
                         src={me} alt="A picture of Ben Toms"/>
-                        <span>
+                        <span className='italic'>
                             BEN TOMS
                         </span>
                         <span className="link__highlight">

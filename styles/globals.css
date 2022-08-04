@@ -38,7 +38,7 @@ a {
 }
 
 .link__highlight a {
-  background: #A2E636;
+  background: #e6e536;
   color: #000000;
   text-decoration: none;
   padding: 4px;
@@ -115,6 +115,8 @@ p {
 .text__callout {
   font-size: 16px;
   font-weight: bold;
+  background: #A2E636;
+  color: #000000;
 }
 
 .pr-28 {
