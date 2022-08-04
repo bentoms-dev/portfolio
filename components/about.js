@@ -2,10 +2,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import me from '.././public/ben-toms-2.jpeg'
 import styles from '../styles/Home.module.css'
+import Form from './form'
 
 export default function About() {
     return (
     <div className='container'>
+        <div className='overlay__tiled'>
+            <Form/>
+        </div>
         <div className={styles.container}>
             <div className='grid grid-cols-1 lg:grid-cols-3 justify-items-end mb-10 lg:mb-28'>
                 <div className='grid grid-cols-1 md:grid-cols-3 col-span-2'>

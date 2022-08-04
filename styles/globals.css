@@ -47,6 +47,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+label {
+  color: #000000;
+}
+
 .container {
   padding: 2rem;
   max-width: 2000px;
@@ -144,4 +149,32 @@ p {
   .worked-with li:last-child:after {
     display: none;
   }
+}
+
+.overlay__tiled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url('./../public/overlay-tile.png');
+  background-position: 0 0;
+  background-size: 4px;
+}
+
+.form input {
+  background-color: #040607;
 }
