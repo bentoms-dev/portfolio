@@ -145,3 +145,12 @@ p {
     display: none;
   }
 }
+
+.section__projects a {
+  text-decoration: none;
+  transition: all 250ms ease-in-out;
+}
+
+.section__projects a:hover {
+  text-decoration: underline;
+}

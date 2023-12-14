@@ -30,7 +30,7 @@ export default function About() {
                     </div>
                     <div className='grid lg:pr-28 lg:pl-4 lg:col-span-2'>
                         <h1 className='text__pull-up'>DEVELOPER</h1>
-                        <p><span className="text__callout">I&apos;VE BEEN DOING THIS A LONG TIME.</span> With 14+ years experience, I have seen it all. I&apos;ve been through site migrations, replatforms, 5am launches, 2am emergency calls, ridiculous bugs and much more.</p>
+                        <p><span className="text__callout">I&apos;VE BEEN DOING THIS A LONG TIME.</span> With 15+ years experience, I have seen it all. I&apos;ve been through site migrations, replatforms, 5am launches, 2am emergency calls, ridiculous bugs and much more.</p>
                         <p>I have over 6 years experience developing in E-Commerce environments for international brands such as Dr. Martens, Missoma and Samsung. I&apos;ve also spent a few years freelancing around London agencies, working on multiple projects for global companies such as Samsung, ExxonMobil and Spotify which lead to extensive knowledge in both B2B and B2C as well as developing excellent client facing skills.</p>
                         <p>My love for the Front-End gives me proficiencies in HTML, CSS, VanillaJS, PHP, MySQL and I&apos;m also highly experienced in NodeJS, NextJS, ReactJs and React Native as well as the popular CMS foundations WordPress, Shopify and Hybris.</p>
                         <p>I am also highly experienced in building Headless CMS solutions and using cloud platforms such as AWS, Netlify and Heroku.</p>
@@ -94,7 +94,7 @@ export default function About() {
         <div className='grid mb-10 lg:mb-28'>
             <span className="w-full p-4 lg:p-10 bg-lime-400 lg:w-100 mb-10"></span>
         </div>
-        <div className='grid grid-cols-1 items-center justify-center section__creative'>
+        <div className='grid grid-cols-1 items-center justify-center section__creative mb-10 lg:mb-28'>
             <div className='bg-white lg:w-1/3 p-4 mx-auto lg:text-right text-black'>
                 <h2 className='text__pull-up'>CREATIVE</h2>
                 <p className='lg:ml-auto lg:w-4/6'>
@@ -106,10 +106,10 @@ export default function About() {
                     </Link> to see my stuff.
                 </p>
                 <p className='lg:ml-auto lg:w-4/6 '>
-                    I&apos;m also a keen musician. I&apos;ve released 4 albums over the years. You can stream them on all platforms, <Link
+                    I&apos;m also a keen musician. I&apos;ve released 5 albums over the years. You can stream them on all platforms, <Link
                         passHref
                         target="_blank"
-                        href="https://linktr.ee/Galleonben">listen here.</Link>
+                        href="https://linktr.ee/galleonofficial">listen here.</Link>
                 </p>
                 <Image
                     priority={true}
@@ -117,6 +117,32 @@ export default function About() {
                     src={meCreative} alt="A picture of Ben Toms"/>
             </div>
         </div>
+        <div className='grid'>
+                <span className="w-full p-4 lg:p-10 bg-lime-400 lg:w-100 mb-10"></span>
+            </div>
+            <div className='grid grid-cols-1 text-center section__projects'>
+                <h3>PERSONAL PROJECTS</h3>
+                <ul className='worked-with list-none text-center flex flex-col lg:flex-row lg:justify-between'>
+                    <li className='display'>
+                        <Link
+                            passHref
+                            target="_blank"
+                            href='https://www.npmjs.com/package/cli-genie'>CLI GENIE</Link>
+                    </li>
+                    <li className='display'>
+                        <Link
+                            passHref
+                            target="_blank"
+                            href='https://www.npmjs.com/package/shopify-compressor'>SHOPIFY COMPRESSOR</Link>
+                    </li>
+                    <li className='display'>
+                        <Link
+                            passHref
+                            target="_blank"
+                            href='https://github.com/bentoms-dev/djenerator'>DJENERATOR</Link>
+                    </li>
+                </ul>
+            </div>
     </div>
     )
 }
