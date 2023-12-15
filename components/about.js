@@ -139,6 +139,12 @@ export default function About() {
                         <Link
                             passHref
                             target="_blank"
+                            href='https://www.npmjs.com/package/config-ease?activeTab=readme'>CONFIG EASE</Link>
+                    </li>
+                    <li className='display'>
+                        <Link
+                            passHref
+                            target="_blank"
                             href='https://github.com/bentoms-dev/djenerator'>DJENERATOR</Link>
                     </li>
                 </ul>
