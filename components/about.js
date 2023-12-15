@@ -3,6 +3,7 @@ import Link from 'next/link'
 import me from '.././public/ben-toms-2.jpeg'
 import meCreative from '.././public/ben-toms-creative.jpg'
 import styles from '../styles/Home.module.css'
+import Popup from '../components/popup'
 
 export default function About() {
     return (
@@ -19,13 +20,7 @@ export default function About() {
                             BEN TOMS
                         </span>
                         <span className="link__highlight">
-                            <Link
-                                passHref
-                                href="mailto:me@ben-toms.com"
-                                target="_blank"
-                            >
-                                Ready to talk? Let&apos;s go →
-                            </Link>
+                            <Popup />
                         </span>
                     </div>
                     <div className='grid lg:pr-28 lg:pl-4 lg:col-span-2'>

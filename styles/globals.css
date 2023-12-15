@@ -37,7 +37,7 @@ a {
   text-decoration: underline;
 }
 
-.link__highlight a {
+.link__highlight button {
   background: #e6e536;
   color: #000000;
   text-decoration: none;
