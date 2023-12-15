@@ -61,7 +61,7 @@ export default function Popup() {
     <button data-modal-target="contact-modal" data-modal-toggle="contact-modal" onClick={handleOpen}  type="button">
         Ready to talk? Let&apos;s go →
     </button>
-    <div id="contact-modal" ref={modal} tabIndex="-1" aria-hidden="true" className={`${openPopup ? '' : 'hidden'} overflow-y-auto overflow-x-hidden fixed h-screen flex lg:items-center lg:justify-center w-full md:inset-0 max-h-full z-10 pacity-0 sm:top-0 sm:left-0 md:top-0 md:left-0 transform -translate-y-full scale-150 transition-opacity transition-transform duration-300`}>
+    <div id="contact-modal" ref={modal} tabIndex="-1" aria-hidden="true" className={`${openPopup ? '' : 'hidden'} overflow-y-auto overflow-x-hidden fixed h-screen flex md:items-center md:justify-center w-full md:inset-0 max-h-full z-10 pacity-0 top-0 left-0 transform -translate-y-full scale-150 transition-opacity transition-transform duration-300`}>
         <div className="relative p-6 w-full max-w-md max-h-full">
             <div className="relative bg-white rounded-lg shadow ">
                 <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
