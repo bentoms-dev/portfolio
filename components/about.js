@@ -32,8 +32,8 @@ export default function About() {
                         <h1 className='text__pull-up'>DEVELOPER</h1>
                         <p><span className="text__callout">I&apos;VE BEEN DOING THIS A LONG TIME.</span> With 15+ years experience, I have seen it all. I&apos;ve been through site migrations, replatforms, 5am launches, 2am emergency calls, ridiculous bugs and much more.</p>
                         <p>I have over 6 years experience developing in E-Commerce environments for international brands such as Dr. Martens, Missoma and Samsung. I&apos;ve also spent a few years freelancing around London agencies, working on multiple projects for global companies such as Samsung, ExxonMobil and Spotify which lead to extensive knowledge in both B2B and B2C as well as developing excellent client facing skills.</p>
-                        <p>My love for the Front-End gives me proficiencies in HTML, CSS, VanillaJS, PHP, MySQL and I&apos;m also highly experienced in NodeJS, NextJS, ReactJs and React Native as well as the popular CMS foundations WordPress, Shopify and Hybris.</p>
-                        <p>I am also highly experienced in building Headless CMS solutions and using cloud platforms such as AWS, Netlify and Heroku.</p>
+                        <p>My love for the Front-End gives me proficiencies in HTML, CSS, JS, NodeJS, NextJS, ReactJS and React Native as well as the popular CMS foundations WordPress, Shopify and Hybris.</p>
+                        <p>I am also highly experienced in building Headless CMS solutions and using cloud platforms such as AWS, Netlify, Shopify Oxygen and Heroku.</p>
                     </div>
                 </div>
                 <div className='lg:text-right grid lg:pl-17'>
@@ -71,7 +71,7 @@ export default function About() {
                     <li>dashboards</li>
                     <li>perf</li>
                     <li>pen test</li>
-                    <li>challenges</li>
+                    <li>npm packages</li>
                 </ul>
             </div>
             <div className='grid'>
