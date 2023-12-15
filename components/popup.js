@@ -1,9 +1,9 @@
-import React, { useState } from "react"
+import React, { useState } from 'react'
 
-export default function popup() {
+export default function Popup() {
 
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    const [openPopup, setOpenPopup] = useState(false)
+    const [openPopup, setOpenPopup] = useState(false);
+
     const modal = document.querySelector('#contact-modal');
 
     function handleOpen() {
