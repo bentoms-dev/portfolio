@@ -3,7 +3,7 @@ import Link from 'next/link'
 import me from '.././public/ben-toms-2.jpeg'
 import meCreative from '.././public/ben-toms-creative.jpg'
 import styles from '../styles/Home.module.css'
-import Popup from '../components/popup'
+import Popup from './popup'
 
 export default function About() {
     return (

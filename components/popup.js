@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 
 export default function Popup() {
 
     const [openPopup, setOpenPopup] = useState(false);
 
-    const modal = document.querySelector('#contact-modal');
+    const modal = useRef()
 
     function handleOpen() {
-        const modalCl = modal.classList
+        const modalCl = modal.current.classList
 
         setOpenPopup(true)
         setTimeout(() => {
@@ -18,9 +18,9 @@ export default function Popup() {
     }
 
     function handleClose() {
-        const modalCl = modal.classList
-        modalCl.add('-translate-y-full')
+        const modalCl = modal.current.classList
 
+        modalCl.add('-translate-y-full')
         setTimeout(() => {
             modalCl.add('opacity-0')
             modalCl.add('scale-150')
@@ -29,8 +29,6 @@ export default function Popup() {
         setTimeout(() => {
          setOpenPopup(false)
         }, 300);
-
-
     }
 
     async function handleSubmit(event) {
@@ -63,7 +61,7 @@ export default function Popup() {
     <button data-modal-target="contact-modal" data-modal-toggle="contact-modal" onClick={handleOpen}  type="button">
         Ready to talk? Let&apos;s go →
     </button>
-    <div id="contact-modal" tabIndex="-1" aria-hidden="true" className={`${openPopup ? '' : 'hidden'} overflow-y-auto overflow-x-hidden fixed h-screen flex items-center justify-center w-full md:inset-0 max-h-full z-10 pacity-0 transform -translate-y-full scale-150 transition-opacity transition-transform duration-300`}>
+    <div id="contact-modal" ref={modal} tabIndex="-1" aria-hidden="true" className={`${openPopup ? '' : 'hidden'} overflow-y-auto overflow-x-hidden fixed h-screen flex items-center justify-center w-full md:inset-0 max-h-full z-10 pacity-0 transform -translate-y-full scale-150 transition-opacity transition-transform duration-300`}>
         <div className="relative p-6 w-full max-w-md max-h-full">
             <div className="relative bg-white rounded-lg shadow ">
                 <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
