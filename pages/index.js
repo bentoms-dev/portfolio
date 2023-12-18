@@ -3,13 +3,38 @@ import Footer from '../components/footer'
 import Topbar from '../components/topBar'
 import About from '../components/about'
 
+import LoadingSpinner from './LoadingSpinner'
+import { useEffect, useState } from 'react'
+
 export default function Home() {
+
+  const [loading, setLoading] = useState(true);
+  const [fadeIn, setfadeIn] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoading(false)
+    }, 5000);
+
+    setTimeout(() => {
+      setfadeIn(false);
+    }, 5100)
+
+    return () => clearTimeout(timeout)
+  }, []);
+
   return (
-    <>
-    <Header/>
-    <Topbar />
-    <About/>
-    <Footer/>
-    </>
+    <div>
+      {loading ? (
+        <LoadingSpinner />
+      ) : (
+        <div className={'fade'}>
+        <Header/>
+        <Topbar />
+        <About/>
+        <Footer/>
+        </div>
+      )}
+    </div>
   )
 }
