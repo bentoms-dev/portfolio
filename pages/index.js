@@ -9,16 +9,11 @@ import { useEffect, useState } from 'react'
 export default function Home() {
 
   const [loading, setLoading] = useState(true);
-  const [fadeIn, setfadeIn] = useState(true);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false)
     }, 5000);
-
-    setTimeout(() => {
-      setfadeIn(false);
-    }, 5100)
 
     return () => clearTimeout(timeout)
   }, []);
