@@ -61,12 +61,12 @@ export default function Popup() {
     <button data-modal-target="contact-modal" data-modal-toggle="contact-modal" onClick={handleOpen}  type="button">
         Ready to talk? Let&apos;s go →
     </button>
-    <div id="contact-modal" ref={modal} tabIndex="-1" aria-hidden="true" className={`${openPopup ? '' : 'hidden'} overflow-y-auto overflow-x-hidden fixed h-screen flex md:items-center md:justify-center w-full md:inset-0 max-h-full z-10 pacity-0 top-0 left-0 transform -translate-y-full scale-150 transition-opacity transition-transform duration-300`}>
-        <div className="relative p-6 w-full max-w-md max-h-full">
-            <div className="relative bg-white rounded-lg shadow ">
+    <div id="contact-modal" ref={modal} tabIndex="-1" aria-hidden="true" className={`${openPopup ? '' : 'hidden'} overflow-y-auto overflow-x-hidden fixed h-screen flex md:items-center md:justify-center w-full md:inset-0 max-h-full z-50 pacity-0 top-1/4 lg:top-0 left-0 transform -translate-y-full scale-150 transition-opacity transition-transform duration-300`}>
+        <div className="relative p-6 w-full max-w-7xl max-h-full">
+            <div className="relative contact-form__container shadow">
                 <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
-                    <h3 className="text-xl text-black">
-                       Tell me about your project
+                    <h3 className="text-xl">
+                       Contact me
                     </h3>
                     <button type="button" className="end-2.5 text-gray-400 bg-transparent hover:bg-green-300 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="contact-modal" onClick={handleClose}>
                         <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -78,24 +78,24 @@ export default function Popup() {
 
                 <div className="p-4 md:p-5">
                     <form className="space-y-4" action="#" onSubmit={handleSubmit}>
-                        <div>
-                            <label htmlFor="email" className="block mb-2 text-sm font-medium text-black">Your email</label>
-                            <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5" placeholder="name@company.com" required />
+                        <div className='flex gap-2 justify-stretch'>
+                            <div className="flex-auto">
+                                <input type="email" name="email" id="email" className="bg-transparent border border-white text-white text-md focus:ring-green-500 focus:border-green-500 block w-full p-2.5" placeholder="What is your email?" required />
+                            </div>
+                            <div className="flex-auto">
+                                <input type="text" name="name" id="name" placeholder="What is your name?" className="bg-transparent border border-white text-white text-md focus:ring-green-500 focus:border-green-500 block w-full p-2.5" required />
+                            </div>
                         </div>
                         <div>
-                            <label htmlFor="name" className="block mb-2 text-sm font-medium text-black">Your name</label>
-                            <input type="text" name="name" id="name" placeholder="Your Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5" required />
+                            <textarea id="message" name="message" className="w-full border text-white border-white p-2.5 bg-transparent focus:ring-3 focus:ring-green-300" placeholder="What do you want me to work on?" required rows={5} cols={100}></textarea>
                         </div>
-                        <div>
-                            <label htmlFor="name" className="block mb-2 text-sm font-medium text-black">How can I help?</label>
-                            <textarea id="message" name="message" className="w-full border text-gray-900 border-gray-300 rounded p-2.5 bg-gray-50 focus:ring-3 focus:ring-green-300" placeholder="Write a brief message" required rows={5} cols={100}></textarea>
-                        </div>
-                        <button type="submit" className="w-full text-black bg-green-300 hover:bg-green-400 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Send it!</button>
+                        <button type="submit" className="bc__green w-full text-black focus:outline-none font-medium text-lg p-44 text-center">I&apos;m ready to talk</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <div className={`${openPopup ? '' : 'hidden'} overlay fixed mix-blend-multiply bg-blue-400 top-0 left-0 h-screen w-screen z-40 backdrop-blur-sm`}></div>
     </>
 )
 }
