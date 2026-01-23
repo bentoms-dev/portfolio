@@ -1,10 +1,14 @@
 {
   "name": "portfolio",
   "private": true,
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "packageManager": "npm@10.8.2",
   "scripts": {
-    "predev": "node scripts/copy-subway-game.mjs",
+    "predev": "node scripts/clean-finder-artifacts.mjs && node scripts/copy-subway-game.mjs",
     "dev": "next dev",
-    "prebuild": "node scripts/copy-subway-game.mjs",
+    "prebuild": "node scripts/clean-finder-artifacts.mjs && node scripts/copy-subway-game.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
