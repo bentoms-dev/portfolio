@@ -8,6 +8,9 @@ export default function Projects() {
             <h3>PERSONAL PROJECTS</h3>
             <ul className='worked-with list-none text-center flex flex-col lg:flex-row lg:justify-between'>
                 <li className='display'>
+                    <Link passHref href='/subway-game'>TERMINAL</Link>
+                </li>
+                <li className='display'>
                     <Link
                         passHref
                         target="_blank"

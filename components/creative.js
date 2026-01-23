@@ -24,7 +24,8 @@ export default function Creative() {
                 </p>
                 <Image
                     priority={true}
-                    className="lg:w-screen lg:h-screen object-fit object-contain lg:object-cover"
+                    sizes="(min-width: 1024px) 33vw, 100vw"
+                    className="w-full h-auto object-cover"
                     src={meCreative} alt="A picture of Ben Toms"/>
             </div>
         </div>

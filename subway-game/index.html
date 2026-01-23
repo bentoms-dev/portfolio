@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal - The Game - Created by Ben Toms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0f172a;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Press Start 2P', cursive;
+            color: white;
+            flex-direction: column;
+            gap: 5px;
+        }
+        canvas {
+            border: 4px solid #334155; /* Slate 700 */
+            border-radius: 4px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            background-color: #000;
+        }
+        </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="assets/terminal-logo.png" alt="Terminal - Game" />
+    </div>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <footer>
+        <div>Copyright &copy; 2026 Terminal - Created by Ben Toms</div>
+    </footer>
+    <script type="module">
+        import { LEVEL_1_MONOLOGUE } from './scripts/level1-platform.js';
+        import { LEVEL_2_MONOLOGUE } from './scripts/level2-hallway.js';
+        import { LEVEL_3_MONOLOGUE } from './scripts/level3-tickethall.js';
+        import { LEVEL_4_MONOLOGUE } from './scripts/level4-control.js';
+        import { LEVEL_5_OUTSIDE_MONOLOGUE } from './scripts/level5-outside.js';
+        window.LEVELS = {
+            platform: LEVEL_1_MONOLOGUE,
+            hallway: LEVEL_2_MONOLOGUE,
+            ticket_hall: LEVEL_3_MONOLOGUE,
+            control_room: LEVEL_4_MONOLOGUE,
+            outside: LEVEL_5_OUTSIDE_MONOLOGUE
+        };
+        // Backward compatibility if needed, or remove
+        window.LEVEL_DATA = LEVEL_1_MONOLOGUE;
+    </script>
+    <script src="dist/game.min.js"></script>
+</body>
+</html>

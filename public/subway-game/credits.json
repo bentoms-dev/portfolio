@@ -1,0 +1,52 @@
+{
+  "title": "TERMINAL",
+  "subtitle": "Thank you for playing",
+  "sections": [
+    {
+      "header": "Created By",
+      "entries": [
+        { "name": "Ben Toms", "role": "Game Design, Programming, Art Direction, Writing" }
+      ]
+    },
+    {
+      "header": "Story & Writing",
+      "entries": [
+        { "name": "Ben Toms", "role": "Narrative Design, Dialogue" }
+      ]
+    },
+    {
+      "header": "Art & Visuals",
+      "entries": [
+        { "name": "Ben Toms", "role": "Pixel Art, Environment Design" }
+      ]
+    },
+    {
+      "header": "Music & Sound",
+      "entries": [
+        { "name": "Luis Zuno", "role": "Original Music" },
+        { "name": "JDWasabi", "role": "Sound Effects" }
+      ]
+    },
+    {
+      "header": "Tools & Tech",
+      "entries": [
+        { "name": "JavaScript", "role": "Game Logic" },
+        { "name": "HTML5 Canvas / WebGL", "role": "Rendering" },
+        { "name": "Open Source Libraries", "role": "Thank you, community" }
+      ]
+    },
+    {
+      "header": "Final Message",
+      "entries": [
+        { "name": "If you're struggling, you're not alone.", "role": "" },
+        { "name": "Talk to someone. Stay.", "role": "" }
+      ]
+    },
+    {
+      "header": "",
+      "entries": [
+        { "name": "Copyright © 2026 Terminal - Ben Toms", "role": "" }
+      ]
+    }
+  ]
+}
