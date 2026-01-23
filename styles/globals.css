@@ -2,188 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@font-face {
-  font-family: 'pp_right_sanstall_regular';
-  src: url('./../public/fonts/pprightsans-tallregular-webfont.woff2') format('woff2'),
-       url('./../public/fonts/pprightsans-tallregular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-::selection {
-  background: #A2E636;
-  color: #000000;
-}
-::-moz-selection {
-  background: #A2E636;
-  color: #000000;
-}
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: Helvetica Neue, sans-serif;
-  color: #ffffff;
-  background-color: #040607;
-  font-size: 14px;
-}
-
-nav {
-  background-color: #040607;
-  position: sticky;
-  top: 0;
-  z-index: 99;
-}
-
-a {
-  color: inherit;
-  text-decoration: underline;
-}
-
-.link__highlight button {
-  background: #e6e536;
-  color: #000000;
-  text-decoration: none;
-  padding: 4px;
-}
-
-* {
-  box-sizing: border-box;
-}
-.container {
-  padding: 2rem;
-  max-width: 2000px;
-  margin: 0 auto;
-}
-
-.logo svg {
-  height: 2em;
-  fill: #ffffff;
-}
-
-h1, h2 {
-  font-size: 20rem;
-  font-family: "pp_right_sanstall_regular", 'Times New Roman', Times, serif;
-}
-
-h3 {
-  font-size: 16px;
-}
-
-.display {
-  font-size: 9rem;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  font-family: "pp_right_sanstall_regular", 'Times New Roman', Times, serif;
-  position: relative;
-}
-
-@media screen and (max-width:767px) {
-  h1,h2 {
-    font-size: 13rem
-  }
-  .display {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+@layer base {
+  body {
+    background-color: #020617;
+    color: white;
+    @apply font-sans antialiased selection:bg-purple-500/30 selection:text-purple-200 overflow-x-hidden;
   }
 }
 
-p {
-  margin-bottom: 15px;
+/* Custom scrollbar for Webkit */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-.text__pull-up {
-  margin-block-start: -7.5rem;
-  margin-bottom: -6rem;
+::-webkit-scrollbar-track {
+  background: #020617;
 }
 
-.text__push-down {
-  margin-block-start: 8.5rem;
-  margin-bottom: -6rem;
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
 }
 
-@media screen and (max-width:767px) {
-  .text__pull-up {
-    margin-bottom: -4rem;
-    margin-block-start: 0rem;
-
-  }
-
-  .text__push-down {
-    margin-block-start: 0rem;
-    margin-bottom: -4rem;
-  }
-}
-
-.text__callout {
-  font-size: 16px;
-  font-weight: bold;
-  background: #A2E636;
-  color: #040607;
-}
-
-.pr-28 {
-  padding-right: 28rem
-}
-
-.pl-17 {
-  padding-left: 17rem
-}
-
-.p-0-2 {
-  padding: 1px
-}
-
-.w-25 {
-  width: 25rem;
-}
-
-@media screen and (min-width:1024px) {
-  .worked-with li::after {
-      content: '/';
-      position: absolute;
-      right: -36px;
-  }
-  .worked-with li:last-child:after {
-    display: none;
-  }
-}
-
-.section__projects a {
-  text-decoration: none;
-  transition: all 250ms ease-in-out;
-}
-
-.section__projects a:hover {
-  text-decoration: underline;
-}
-
-.fade {
-  animation: fade-in 3s;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100;
-  }
-}
-
-.contact-form__container {
-  background-color: #040607;
-  color: #ffffff;
-}
-
-.bc__green {
-  background-color: #a2e636 !important;
-  text-transform: uppercase;
-
-}
-.bc__green:hover {
-  background-color: #e6e536 !important;
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
 }

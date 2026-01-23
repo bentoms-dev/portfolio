@@ -1,35 +1,17 @@
-import Header from '../components/header'
+import Head from 'next/head'
+import BentoGrid from '../components/bento/Grid'
 import Footer from '../components/footer'
-import Topbar from '../components/topBar'
-import About from '../components/about'
-
-import LoadingSpinner from './LoadingSpinner'
-import { useEffect, useState } from 'react'
 
 export default function Home() {
-
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setLoading(false)
-    }, 5000);
-
-    return () => clearTimeout(timeout)
-  }, []);
-
   return (
-    <div>
-      {loading ? (
-        <LoadingSpinner />
-      ) : (
-        <div className={'fade'}>
-        <Header/>
-        <Topbar />
-        <About/>
-        <Footer/>
-        </div>
-      )}
-    </div>
+    <>
+      <Head>
+        <title>Ben Toms :: Development Industry Leader</title>
+        <meta name="description" content="Ben Toms. Developer, Creative, Musician. Industry Leader." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <BentoGrid />
+      <Footer />
+    </>
   )
 }

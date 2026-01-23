@@ -1,45 +1,45 @@
 import Head from 'next/head'
 import Link from 'next/link'
-
-import Footer from '../components/footer'
-import Topbar from '../components/topBar'
+import { ArrowLeft } from 'lucide-react'
 
 export default function SubwayGame() {
     return (
-        <div className="min-h-screen bg-slate-900">
+        <div className="min-h-screen bg-slate-950 text-slate-300 font-sans selection:bg-yellow-500/30 selection:text-white">
             <Head>
                 <title>Terminal — The Game</title>
                 <meta name="description" content="Terminal — a WebGL game." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
 
-            <Topbar />
+            <div className="max-w-[95%] mx-auto px-4 py-8 h-screen flex flex-col">
+                {/* Navigation */}
+                <div className="mb-6 flex justify-between items-center">
+                     <Link href="/" className="inline-flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-white transition-colors group">
+                        <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
+                        Back to Grid
+                    </Link>
+                    <span className="text-xs font-mono text-slate-600 uppercase tracking-widest">WebGL Experiment</span>
+                </div>
 
-            <main className="px-4 pb-8">
-                <div className="max-w-full mx-auto">
-                    <div className="flex items-center justify-between text-white mb-3">
-                        <Link passHref href="/">
-                            Back to site
-                        </Link>
-                    </div>
+                <div className="flex-1 w-full overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-black relative group">
+                    <iframe
+                        src="/subway-game/index.html"
+                        title="Terminal - The Game"
+                        className="w-full h-full"
+                        style={{ border: 'none' }}
+                        allow="fullscreen"
+                    />
+                </div>
 
-                    <div className="w-full overflow-hidden rounded border border-slate-700 shadow-lg bg-black">
-                        <iframe
-                            src="/subway-game/index.html"
-                            title="Terminal - The Game"
-                            className="w-full"
-                            style={{ height: '82vh' }}
-                            allow="fullscreen"
-                        />
-                    </div>
-
-                    <p className="text-slate-300 text-xs mt-3">
+                <div className="mt-4 flex justify-between items-center text-xs text-slate-500">
+                    <p>
                         Tip: click inside the game to capture keyboard controls.
                     </p>
+                     <p>
+                        Built with Javascript & custom WebGL engine.
+                    </p>
                 </div>
-            </main>
-
-            <Footer />
+            </div>
         </div>
     )
 }
