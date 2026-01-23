@@ -24,7 +24,7 @@ export default function Intro(){
             <h1 className='text__pull-up text-6xl mb-6'>DEVELOPER.<br/>CREATIVE.<br/>MUSICIAN.</h1>
             <p className="text-xl mb-4"><span className="text__callout">NOT JUST A CODER.</span> I build digital experiences, create visual art, and compose music. This portfolio is a collection of my work across all these disciplines.</p>
             <p className="text-lg">
-                For over 15 years, I've been writing code for global brands like Dr. Martens and Samsung. But my passion doesn't stop at the IDE. I'm a painter, a beat-maker, and a creator at heart.
+                For over 15 years, I&apos;ve been writing code for global brands like Dr. Martens and Samsung. But my passion doesn&apos;t stop at the IDE. I&apos;m a painter, a beat-maker, and a creator at heart.
             </p>
         </div>
     </div>

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { ArrowLeft, MapPin, Mail, Coffee, Terminal, Cpu } from 'lucide-react'
+import { ArrowLeft, MapPin } from 'lucide-react'
 
 export default function Bio() {
   return (
@@ -38,7 +38,7 @@ export default function Bio() {
             </h2>
             <div className="prose prose-invert prose-lg text-slate-400 leading-relaxed">
               <p className="mb-6">
-                I've been in web development for over 16 years, and now I'm a <strong>Technical Lead</strong>, designing solutions, steering projects, and leading brilliant teams to deliver work we can all be proud of. My role is part architect, part problem-solver, and part mentor. I spend a lot of time mapping out how things should be built, making key technical decisions, and making sure everyone on the team has what they need to do their best work.
+                I&apos;ve been in web development for over 16 years, and now I&apos;m a <strong>Technical Lead</strong>, designing solutions, steering projects, and leading brilliant teams to deliver work we can all be proud of. My role is part architect, part problem-solver, and part mentor. I spend a lot of time mapping out how things should be built, making key technical decisions, and making sure everyone on the team has what they need to do their best work.
               </p>
             </div>
           </section>
@@ -50,7 +50,7 @@ export default function Bio() {
             </h2>
             <div className="prose prose-invert prose-lg text-slate-400 leading-relaxed">
                 <p className="mb-6">
-                    When I do get hands-on, it's usually building Node-based tools, apps, features, or backend processes, often for Shopify stores—the kind of things that quietly power the front end and make a big difference to performance, maintainability, and developer experience.
+                    When I do get hands-on, it&apos;s usually building Node-based tools, apps, features, or backend processes, often for Shopify stores—the kind of things that quietly power the front end and make a big difference to performance, maintainability, and developer experience.
                 </p>
                 <p>
                     My background in <strong>JavaScript, CSS, HTML, React, and Vue</strong> means I can jump into the front end when needed, and it also helps me bridge conversations between disciplines so the right solution comes together smoothly.
@@ -65,10 +65,10 @@ export default function Bio() {
             </h2>
             <div className="prose prose-invert prose-lg text-slate-400 leading-relaxed">
               <p className="mb-6">
-                What I enjoy most now is the <strong>human side of tech</strong>: collaborating with smart, creative people, mentoring developers, unblocking tricky problems, and watching the things we've built actually get used in the real world.
+                What I enjoy most now is the <strong>human side of tech</strong>: collaborating with smart, creative people, mentoring developers, unblocking tricky problems, and watching the things we&apos;ve built actually get used in the real world.
               </p>
               <p>
-                 Seeing our work make a difference, whether that's a seamless checkout, a time-saving internal tool, or a feature users genuinely love, is still the best part of the job.
+                 Seeing our work make a difference, whether that&apos;s a seamless checkout, a time-saving internal tool, or a feature users genuinely love, is still the best part of the job.
               </p>
             </div>
           </section>
@@ -78,11 +78,6 @@ export default function Bio() {
                  <div className="flex items-center gap-3 text-slate-400">
                     <MapPin size={20} /> Alicante, Spain
                  </div>
-                 {/*
-                 <div className="flex items-center gap-3 text-slate-400">
-                    <Mail size={20} /> Contact Me
-                 </div>
-                 */}
              </div>
           </section>
 

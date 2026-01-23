@@ -18,7 +18,7 @@ export default function Music() {
                 <div className="lg:pr-10">
                     <h2 className='text__pull-up text-5xl mb-4'>MUSICIAN</h2>
                     <p className='mb-6'>
-                        <span className="text__callout">SOUNDSCAPES & BEATS.</span> Making music is my escape and my passion. I've released 5 albums over the years, exploring electronic, downtempo, and experimental sounds.
+                        <span className="text__callout">SOUNDSCAPES & BEATS.</span> Making music is my escape and my passion. I&apos;ve released 5 albums over the years, exploring electronic, downtempo, and experimental sounds.
                     </p>
                     <p className="mb-6">
                         Available on all major streaming platforms. <Link
