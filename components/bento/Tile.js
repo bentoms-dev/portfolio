@@ -12,7 +12,8 @@ export default function Tile({
     className,
     colSpan = 1,
     rowSpan = 1,
-    delay = 0
+    delay = 0,
+    background
 }) {
     return (
         <motion.div
@@ -29,6 +30,13 @@ export default function Tile({
         >
             {/* Glossy gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+            {/* Background Layer (Full Bleed) */}
+            {background && (
+                <div className="absolute inset-0 z-0">
+                    {background}
+                </div>
+            )}
 
             {/* Content Container */}
             <div className="relative z-10 h-full w-full">

@@ -13,57 +13,42 @@ export default function BentoGrid() {
             <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-4 auto-rows-[minmax(180px,auto)] gap-4">
 
                 {/* Row 1: Profile (Large) + Stats + Social */}
+                {/* Profile takes 2x2, so it occupies Row 1 & 2, Cols 1 & 2 */}
                 <ProfileTile />
                 <StatsTile />
                 <GithubTile />
 
-                {/* Row 2: Tech Stack (Tall) + Projects */}
+                {/* Row 2: Tech Stack + Music (Fills the remaining 2 cols next to Profile) */}
                 <TechStackTile />
+                <MusicTile />
+
+                {/* Row 3: Categories + Art + Filler/Future */}
                 <ProjectTile
-                    title="CLI Genie"
-                    description="Easily create interactive command-line interfaces (CLIs) with a genie-style interface"
-                    type="NPM Package"
-                    downloads="2.5k+"
-                    link="https://www.npmjs.com/package/cli-genie"
+                    title="NPM Packages & Tools"
+                    description="Open source libraries, CLIs and dev tools."
+                    type="Collection"
+                    link="/npm-packages"
                     color="bg-blue-500"
-                    delay={0.1}
-                />
-                <ProjectTile
-                    title="Config Ease"
-                    description="Simplifies the management of dynamic configurations in Node.js applications"
-                    type="NPM Package"
-                    downloads="1.2k+"
-                    link="https://www.npmjs.com/package/config-ease"
-                    color="bg-purple-500"
-                    delay={0.2}
-                />
-                <ProjectTile
-                    title="Shopify Compressor"
-                    description="A powerful, modern asset compressor and optimizer for Shopify themes."
-                    type="NPM Package"
-                    downloads="800+"
-                    link="https://www.npmjs.com/package/shopify-compressor"
-                    color="bg-green-500"
+                    colSpan={1}
                     delay={0.3}
                 />
-
-                {/* Row 3: More Projects + Accents (Music/Art) */}
-                <ProjectTile
-                    title="Subway Game"
-                    description="Retro terminal-style game built with Javascript & WebGL"
-                    type="Web Game"
-                    link="/subway-game"
+                 <ProjectTile
+                    title="Web Games"
+                    description="Interactive visualization and browser games."
+                    type="Collection"
+                    link="/games"
                     color="bg-yellow-500"
+                    colSpan={1}
                     delay={0.4}
                 />
-                 <MusicTile />
                  <ArtTile />
+                 {/* Placeholder for future or make Art/Music bigger? For now keeping 4x grid consistent */}
                  <ProjectTile
-                    title="DJenerator"
-                    description="Generate MIDI for Djent rhythms and polyrhythms"
-                    type="Open Source"
-                    link="https://github.com/bentoms-dev/djenerator"
-                    color="bg-pink-500"
+                    title="Contact"
+                    description="Get in touch for collaborations."
+                    type="Link"
+                    link="mailto:me@ben-toms.com"
+                    color="bg-slate-600"
                     delay={0.5}
                 />
             </div>

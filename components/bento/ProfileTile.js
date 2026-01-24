@@ -2,14 +2,13 @@ import React from 'react';
 import Tile from './Tile';
 import Image from 'next/image';
 import Link from 'next/link';
-import me from '../../public/me.png';
 import { MapPin, Mail } from 'lucide-react';
 
 export default function ProfileTile() {
     return (
         <Tile colSpan={2} rowSpan={2} className="relative p-0 !overflow-hidden flex flex-col justify-end group/profile">
              <Image
-                src={me}
+                src="/me.png"
                 alt="Ben Toms"
                 fill
                 priority

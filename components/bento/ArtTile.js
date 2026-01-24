@@ -2,14 +2,13 @@ import React from 'react';
 import Tile from './Tile';
 import { Palette, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
-import meCreative from '../../public/skull.png';
 import Link from 'next/link';
 
 export default function ArtTile() {
     return (
         <Tile colSpan={1} rowSpan={2} delay={0.3} className="relative p-0 !overflow-hidden group/art">
              <Image
-                src={meCreative}
+                src="/skull.png"
                 alt="Creative Art"
                 fill
                 className="object-cover transition-transform duration-700 group-hover/art:scale-110"
