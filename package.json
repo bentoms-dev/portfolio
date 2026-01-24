@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "engines": {
-    "node": ">=18.17.0"
+    "node": ">=20.0.0"
   },
   "packageManager": "npm@10.8.2",
   "scripts": {
