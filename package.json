@@ -23,7 +23,7 @@
     "react-ga": "^3.3.1",
     "react-snowfall": "^2.1.1",
     "react-spinners": "^0.13.8",
-    "sharp": "^0.30.6",
+    "sharp": "^0.34.5",
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
