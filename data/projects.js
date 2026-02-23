@@ -25,6 +25,15 @@ export const npmPackages = [
         link: "https://www.npmjs.com/package/shopify-compressor",
         color: "bg-green-500",
         delay: 0.3
+    },
+        {
+        title: "Shopify Compressor Pro",
+        description: "Shopify Compression with advanced features and for multiple themes",
+        type: "NPM Package",
+        downloads: "300+",
+        link: "https://www.npmjs.com/package/shopify-compressor-pro",
+        color: "bg-green-500",
+        delay: 0.4
     }
 ];
 
